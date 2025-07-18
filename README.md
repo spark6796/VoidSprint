@@ -1,0 +1,1 @@
+VoidSprint is a 2D platformer where you fight through shadows, collect cursed coins and climb your way out. Every jump, strike, and step forward takes you deeper into the unknown.
