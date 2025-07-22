@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="68" height="32" tilewidth="16" tileheight="16" infinite="0" backgroundcolor="#000000" nextlayerid="7" nextobjectid="16">
+ <tileset firstgid="1" source="roguelike-base.tsx"/>
+ <tileset firstgid="1768" source="currency/round-gem-gradient.tsx"/>
+ <tileset firstgid="1780" source="currency/coin-gold.tsx"/>
+ <tileset firstgid="1785" source="roguelike-interior.tsx"/>
+ <tileset firstgid="2271" source="currency/purple-gem.tsx"/>
+ <tileset firstgid="2278" source="currency/coin-ruby.tsx"/>
+ <tileset firstgid="2283" source="currency/coin-silver.tsx"/>
+ <tileset firstgid="2288" source="currency/gem-yellow.tsx"/>
+ <tileset firstgid="2292" source="currency/gem-red.tsx"/>
+ <tileset firstgid="2296" source="currency/gem-gray.tsx"/>
+ <tileset firstgid="2300" source="currency/gem-green.tsx"/>
+ <tileset firstgid="2304" source="currency/gem-blue.tsx"/>
+ <tileset firstgid="2308" source="currency/round-gem-purple.tsx"/>
+ <objectgroup id="13" name="Doors">
+  <object id="37" name="spawn" x="15.8917" y="479.975" width="16" height="16">
+   <properties>
+    <property name="type" value="spawn"/>
+   </properties>
+  </object>
+  <object id="38" name="next" x="1007.85" y="336.115" width="16" height="16" rotation="359.527">
+   <properties>
+    <property name="type" value="next"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="1" name="Platforms" width="68" height="32">
+  <data encoding="base64" compression="zlib">
+   eJztmE1OxCAUx4m2UG/gvkfwADoXcDF6FuccftSL6Ma9mszCzBHcaKJb9yZCpqQUefRBoVCdf/LS+aDl8eufBy0rCWGJIye55PO6Hy+PXLTj0deOR1+Cx5sl3hVeJh5LSsiZJc5p1/awMvefk1L543RvG2r/l5zdFY9rCp8XW1geN3TLY2m471P0P5XUfMSYGx63wFhj1I8hHlN7ZiifR57HE49n+puHqR6E7n9qiXwgP+hK4Q+TYnpG5GObI6pMPL5Z//tRhf9/XeTpjxSSLHLmUZRdxJTKImceJjWB56jOIhSPUDUFm89/fb5V/VArnx8i5R2Lx0vhfs6m9W6N8NjXzHhQj+tWDn6dG49jft0Tx1hoPIRPIK+YeNzx3+5HjifH+gGtIQ3twsUfttqpr+U58sAIw8NnzciVh22uCGF5uPadKw8paO5IHqH3Eil5mPbhtnykZ2ra5+GjdbsfWAWsH9g9xqZtJ8dvex6B8oF84pq/ziEkD+weo/KoZ3IdwbYfEsRhpc2rMTywe4zFiPoO1VTXGmHioB6h/lMLygdTK21tLkr7caj/VBqzVuht/sJ66yvTWOa23oaU5PHBCPnkccD87nduPGK+55nj+6AfC1hZMA==
+  </data>
+ </layer>
+ <objectgroup id="9" name="Enemies" offsetx="-16" offsety="0">
+  <object id="13" template="enemies/archer.tx" x="115.334" y="46.667">
+   <properties>
+    <property name="jump_around" type="bool" value="true"/>
+    <property name="jump_around_time" type="float" value="4"/>
+    <property name="jump_around_velocity" type="float" value="500"/>
+   </properties>
+  </object>
+  <object id="31" template="enemies/archer.tx" x="736.5" y="128.833">
+   <properties>
+    <property name="jump_around" type="bool" value="true"/>
+    <property name="jump_around_time" type="float" value="4"/>
+    <property name="jump_around_velocity" type="float" value="500"/>
+   </properties>
+  </object>
+  <object id="18" template="enemies/archmage.tx" x="78" y="98.6667"/>
+  <object id="21" template="enemies/cavalier.tx" x="875.167" y="383">
+   <properties>
+    <property name="facing_right" type="bool" value="true"/>
+    <property name="walk_around" type="bool" value="true"/>
+    <property name="walk_around_time" type="float" value="1"/>
+    <property name="walk_around_velocity" type="float" value="200"/>
+   </properties>
+  </object>
+  <object id="22" template="enemies/crossbow.tx" x="831.333" y="194.666">
+   <properties>
+    <property name="facing_right" type="bool" value="false"/>
+    <property name="walk_around" type="bool" value="true"/>
+    <property name="walk_around_time" type="float" value="1.8"/>
+    <property name="walk_around_velocity" type="float" value="72"/>
+   </properties>
+  </object>
+  <object id="32" template="enemies/crossbow.tx" x="183.667" y="206.333">
+   <properties>
+    <property name="facing_right" type="bool" value="false"/>
+    <property name="walk_around" type="bool" value="true"/>
+    <property name="walk_around_time" type="float" value="1.8"/>
+    <property name="walk_around_velocity" type="float" value="72"/>
+   </properties>
+  </object>
+  <object id="25" template="enemies/king.tx" x="973.999" y="254.667"/>
+  <object id="26" template="enemies/mage.tx" x="320" y="49.333">
+   <properties>
+    <property name="facing_right" type="bool" value="true"/>
+    <property name="walk_around" type="bool" value="true"/>
+    <property name="walk_around_time" type="float" value="4.6"/>
+    <property name="walk_around_velocity" type="float" value="50"/>
+   </properties>
+  </object>
+  <object id="27" template="enemies/prince.tx" x="380.667" y="206.333"/>
+  <object id="28" template="enemies/shield.tx" x="831.583" y="382.917" visible="1"/>
+  <object id="29" template="enemies/sword.tx" x="245.333" y="332.667"/>
+ </objectgroup>
+ <layer id="4" name="Gold" width="68" height="32">
+  <data encoding="base64" compression="zlib">
+   eJzt2DEKgDAMheEMIvX+B/QAXRw6ODhoBUEQ1GqoTf0/6CrxNTVFEeBccMtqRSb3dSVl8LscYi7S6Tx3IN/X1v0AEljsmauaLb4TkIIer1PgHlSMkb1AZeLc8A/6uq/4LGjM0j9+K6zdQXLXayEfCzXmQhZHZJKmUfofCgBATsz7e2JO24JNM8a+G2Y=
+  </data>
+ </layer>
+</map>
