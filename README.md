@@ -14,18 +14,18 @@ VoidSprint is a 2D platformer where you fight through shadows, collect cursed co
 
 ## 🚀 How to Run
 
-Step 1 : Clone the project or downloaded the code manually
+**Step 1** : Clone the project or downloaded the code manually
 ```bash
 git clone https://github.com/spark6796/VoidSprint.git
 ```
 
-Make sure you have [uv](https://github.com/astral-sh/uv) installed.
-Step 2 : if not then install uv
+**Step 2** : Make sure you have [uv](https://github.com/astral-sh/uv) installed.
+if not then install uv
 ```bash
 pip install uv
 ```
 
-Step 3 : Then just run:
+**Step 3** : Then just run:
 
 ```bash
 uv sync
