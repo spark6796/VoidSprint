@@ -24,10 +24,10 @@ class MainCharacterState(enum.IntEnum):
 
 
 class MainCharacterAssets:
-    coin_collect_sound = arcade.load_sound(ASSETS_DIR / "sfx" / "coin.mp3")
+    coin_collect_sound = arcade.load_sound(ASSETS_DIR / "sfx" / "coin.wav")
     jump_sound = arcade.load_sound(ASSETS_DIR / "sfx" / "jump.wav")
     attack_sound = arcade.load_sound(ASSETS_DIR / "sfx" / "attack.wav")
-    hurt_sound = arcade.load_sound(ASSETS_DIR / "sfx" / "hurt.mp3")
+    hurt_sound = arcade.load_sound(ASSETS_DIR / "sfx" / "hurt.wav")
 
 
 class MainCharacter:
