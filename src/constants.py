@@ -1,22 +1,25 @@
 from pathlib import Path
+import sys
 
 SCREEN_WIDTH = 1920
 SCREEN_HEIGHT = 1080
 SCREEN_TITLE = "VoidSprint"
 
 # Path to the game's root directory
-try:
-    ROOT_DIR = Path("src").resolve(strict=True)
-except FileNotFoundError as e:
-    raise RuntimeError(
-        "Root dir not found. Perhaps try to run the project from root and not inside src."
-    ) from e
+if getattr(sys, 'frozen', False):
+    # Running as compiled executable
+    ROOT_DIR = Path(sys.executable).parent
+    ASSETS_DIR = ROOT_DIR / "_internal/assets"
+else:
+    # Running as Python script
+    ROOT_DIR = Path(__file__).parent.parent.resolve()
+    ASSETS_DIR = ROOT_DIR / "assets"
 
 # Path to the game's assets directory
 # we don't need to be strict here as ROOT
 # if the user is in the wrong dir they will already get
 # the error from above
-ASSETS_DIR = Path("assets").resolve()
+ASSETS_DIR = Path(ASSETS_DIR)
 FONTS_DIR = ASSETS_DIR / "fonts"
 SAVES_DIR = Path("saves").resolve()
 SETTINGS_DIR = SAVES_DIR / "settings"

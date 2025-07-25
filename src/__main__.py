@@ -1,10 +1,14 @@
 import json
 import arcade
+import sys 
+import os
 
 import constants
 from gui.views import MainMenuView
 from gui.utils import load_settings
 
+if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
+    os.chdir(sys._MEIPASS)
 
 def ensure_settings_file() -> None:
     if not constants.SETTINGS_DIR.exists():

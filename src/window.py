@@ -3,7 +3,6 @@ import json
 import typing as t
 
 import arcade
-import arcade.gl as gl
 import arcade.gui
 from arcade.types import Color
 
@@ -49,7 +48,7 @@ class GameView(arcade.View):
         self.current_level = current_level
         self.window.set_mouse_visible(False)
         arcade.set_background_color(arcade.color.BLACK)
-        arcade.SpriteList.DEFAULT_TEXTURE_FILTER = gl.NEAREST, gl.NEAREST
+        arcade.SpriteList.DEFAULT_TEXTURE_FILTER = (0x2600,0x2600)
         self.spritesheet = tileset.RoguelikeInterior()
         self.base_spritesheet = tileset.RoguelikeBase()
 
