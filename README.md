@@ -14,6 +14,12 @@ VoidSprint is a 2D platformer where you fight through shadows, collect cursed co
 
 ## 🚀 How to Run
 
+## If you use Windows here is the direct download link
+
+👉 [Download VoidSprint for Windows](https://raw.githubusercontent.com/spark6796/VoidSprint/refs/heads/master/release/windows/VoidSprint.zip)
+
+## If you use Linux please follow the steps below
+
 **Step 1** : Clone the project or downloaded the code manually
 ```bash
 git clone https://github.com/spark6796/VoidSprint.git
